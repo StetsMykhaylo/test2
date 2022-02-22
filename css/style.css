@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+/* =========================================GLOBAL================================== */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+}
+
+.primary {
+  color: #002265;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p_18 {
+  font-size: 18px;
+}
+
+.p_12 {
+  line-height: 12px;
+  font-size: 12px;
+}
+
+.p_10 {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 10px;
+}
+
+.blue {
+  color: lightblue;
+}
+
+.grey {
+  color: grey;
+}
+
+.yellow {
+  background-color: yellowgreen;
+  display: block;
+  padding: 3px 5px;
+  border-radius: 12px;
+}
+
+.through {
+  text-decoration: line-through;
+}
+
+.text-left {
+  text-align: end;
+  width: 100%;
+  opacity: 0;
+}
+
+.item > * {
+  margin-bottom: 10px;
+}
+
+.item {
+  padding: 20px;
+  border: solid lightgray 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.item_disc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.item_image {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding-bottom: 10px;
+}
+
+.disc {
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 8%;
+}
+
+.star_rate {
+  vertical-align: middle;
+}
+
+.best_price {
+  background-color: green;
+  padding: 5px 10px;
+  border-radius: 8%;
+}
+
+.item_rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item_price_total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price {
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.item_buy {
+  display: none;
+}
+
+.button {
+  padding: 10px 30px;
+  background-color: green;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 18px;
+}
+
+.fa-solid {
+  font-size: 10px;
+}
+
+.fa-fire-flame-curved {
+  font-size: 10px;
+}
+
+.item:hover {
+  border: solid red 2px;
+}
+
+.item:hover .text-left {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.item:hover .item_buy {
+  display: block;
+  margin-top: 20px;
+}
+
+@media (max-width: 996px) {
+  .header {
+    padding: 48px 50px 0 50px;
+  }
+  .header_list {
+    display: none;
+  }
+  .main {
+    padding: 0 50px;
+  }
+  .burger {
+    display: block;
+  }
+  .hero_right::after {
+    content: url(../img/bg3.png);
+    position: absolute;
+    left: 40%;
+    top: 6%;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 428px) {
+  .header {
+    padding: 48px 25px 0 25px;
+  }
+  .main {
+    padding: 0 25px;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .burger_line {
+    width: 30px;
+  }
+  .hero_right::after {
+    content: url(../img/bg2.png);
+    position: absolute;
+    left: -15%;
+    top: -20%;
+    z-index: 10;
+  }
+  .hero_left::after {
+    content: url(../img/bg1.png);
+    position: absolute;
+    left: 56%;
+    top: -95%;
+    z-index: 10;
+  }
+  .pb_item:first-of-type::after {
+    display: none;
+  }
+  .pb_item:last-of-type::after {
+    display: none;
+  }
+  .passions {
+    margin: 30px 0 95px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
